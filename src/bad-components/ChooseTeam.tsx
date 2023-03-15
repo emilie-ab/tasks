@@ -19,6 +19,7 @@ export function ChooseTeam(): JSX.Element {
             newTeam.push(option);
         }
         setTeam(newTeam);
+        setAllOptions(PEOPLE);
     }
 
     function clearTeam() {
