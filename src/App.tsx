@@ -55,7 +55,7 @@ function App(): JSX.Element {
                 </Row>
             </Container>
             <hr></hr>
-            {/* <DoubleHalf></DoubleHalf> */}
+            <DoubleHalf></DoubleHalf>
             <hr></hr>
             <ChooseTeam></ChooseTeam>
             <hr></hr>
