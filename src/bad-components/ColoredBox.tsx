@@ -5,14 +5,10 @@ export const COLORS = ["red", "blue", "green"];
 const DEFAULT_COLOR_INDEX = 0;
 
 interface updateColorProps {
-    setColorIndex: (newIndex: number) => void;
     colorIndex: number;
 }
 
-function ColorPreview({
-    colorIndex,
-    setColorIndex
-}: updateColorProps): JSX.Element {
+function ColorPreview({ colorIndex }: updateColorProps): JSX.Element {
     return (
         <div
             data-testid="colored-box"
@@ -41,10 +37,7 @@ export function ColoredBox(): JSX.Element {
                 <Button onClick={updateColor}>Next Color</Button>
                 <br></br>
                 <br></br>
-                <ColorPreview
-                    colorIndex={colorIndex}
-                    setColorIndex={setColorIndex}
-                ></ColorPreview>
+                <ColorPreview colorIndex={colorIndex}></ColorPreview>
             </div>
         </div>
     );
