@@ -47,7 +47,7 @@ export function EditMode(): JSX.Element {
                         ></Form.Control>
                     </Form.Group>
                 ) : (
-                    printStatus()
+                    printStatus
                 )}
             </div>
         </>
