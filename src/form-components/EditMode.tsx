@@ -46,9 +46,8 @@ export function EditMode(): JSX.Element {
                             onChange={updateName}
                         ></Form.Control>
                     </Form.Group>
-                ) : (
-                    printStatus
-                )}
+                ) : null}
+                {inEditMode === false ? printStatus() : null}
             </div>
         </>
     );
